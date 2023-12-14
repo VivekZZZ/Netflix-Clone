@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+body {
+  background-color: #232323;
+  color: white;
+}
+
+/*--------------------------Navbar--------------- */
+
+.header {
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.3) 60%,
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    url(./Images/bgImage.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.navbar {
+  height: 90px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 3%;
+}
+.navbar>.logo {
+  height: 50%;
+  width: 167px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar img{
+  width: 100%;
+  height: 100%;
+}
+
+/* -----------------------sign in form----------------------------- */
+
+.sign-in {
+  width: 450px;
+  height: 660px;
+  margin: auto;
+  padding: 60px 68px 40px;
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+}
+.sign-in > form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.sign-in > form > label {
+  font-size: 32px;
+  font-weight: 700;
+}
+.sign-in > form > input {
+  width: 100%;
+  height: 50px;
+  margin-top: 25px;
+  border-radius: 5px;
+  background-color: #373737;
+  padding: 5px 20px;
+  border: none;
+}
+.sign-in > form > input::placeholder {
+  font-size: 16px;
+  font-weight: 500;
+  color: #949292;
+}
+
+.sign-in > form > button {
+  cursor: pointer;
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  margin: 45px 0 20px;
+  font-size: 16px;
+  font-weight: 800;
+  color: white;
+  background-color: #e50914;
+}
+.sign-in > form > button:hover{
+  background-color: #b20911;
+}
+
+form > .box-1 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  color: #949292;
+  font-size: 16px;
+}
+.sign-up {
+  margin-top: 80px;
+}
+.sign-up>p{
+  color: #949292;
+}
+.sign-up span {
+  color: white;
+  margin-right: 5px;
+}
+.sign-up span:hover{
+  border-bottom: 2px solid white;
+  cursor: pointer;
+}
+.sign-up p {
+  font-weight: 600;
+}
+.captcha {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #949292;
+  font-weight: 400;
+}
+
+.captcha>p>span>a{
+  text-decoration: none;
+  color: rgb(0, 102, 235);
+  font-weight: 500;
+}
+.captcha>p>span:hover{
+  border-bottom: 1px solid rgb(0, 102, 235);
+}
+
+
+/* --------------footer-------------------------- */
+
+.footer {
+  margin-top: 100px;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 0px 17%;
+}
+.footer p {
+  padding-top: 30px;
+  color: #949292;
+  margin-bottom: 25px;
+}
+.footer>p>span:hover{
+  border-bottom: 2px solid #949292;
+  cursor: pointer;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 25%;
+}
+.footer-content .col a {
+  color: #949292;
+  text-decoration: none;
+}
+.footer-content>.col>a:hover{
+  border-bottom: 1px solid white;
+  padding: 0px;
+  margin: 0;
+
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  line-height: 30px;
+}
+
+.nav-language > button {
+  cursor: pointer;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border: 0.1px solid rgb(127, 126, 126);
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 20px 16px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.nav-language select {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: rgb(158, 157, 157);
+  font-size: 16px;
+  font-weight: lighter;
+}
+.nav-language select>option{
+  background-color: black;
+}
+.nav-language i {
+  margin-right: 7px;
+  color: rgb(166, 164, 164);
+}
